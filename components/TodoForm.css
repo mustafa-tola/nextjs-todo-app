@@ -1,0 +1,34 @@
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.todo-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+input[type="text"] {
+    width: 60%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+}
+
+button {
+    width: 35%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #228be6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #36454f;
+}
