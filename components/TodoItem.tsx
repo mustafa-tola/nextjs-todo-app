@@ -6,7 +6,7 @@ import React from 'react'
 import "./TodoItem.css"
 
 const updateTodo = async (id: string, completed: boolean,refresh:() => void) => {
-    await fetch("http://localhost:3000/api/todo/update", {
+    await fetch("http://localhost:3001/api/todo/update", {
         method: "POST",
         mode: "no-cors",
         body: JSON.stringify({id,isDone:completed})
@@ -15,7 +15,7 @@ const updateTodo = async (id: string, completed: boolean,refresh:() => void) => 
 }
 
 const deleteTodo = async (id: string, refresh: () => void) => {
-    await fetch(`http://localhost:3000/api/todo/delete?id=${id}`,{mode: 'no-cors'})
+    await fetch(`http://localhost:3001/api/todo/delete?id=${id}`,{mode: 'no-cors'})
     refresh();
 }
 

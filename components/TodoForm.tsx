@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 import "./TodoForm.css"
 
 const addTodo = async (name: string, refresh: () => void) => {
-    await fetch("http://localhost:3000/api/todo/add",{
+    await fetch("http://localhost:3001/api/todo/add",{
         method: "POST",
         mode: "no-cors",
         body: JSON.stringify({name})
